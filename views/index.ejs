@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>Welcome to the Home Page</h1>
+  <!-- Displaying links to go to other pages. -->
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/user/YourName">Profile</a>
+  </nav>
+  
+  <!-- Displaying image "ChillyBeans.jpg" from the "public/images" folder. -->
+  <img src="/images/ChillyBeans.jpg" alt="image displaying a white fluffy dog and brown chihuahua" style="width:300px;">
+  
+  <!-- Creating a button for downloading the "ChillyBeans.jpg" image when clicked. -->
+  <form action="/download" method="get">
+    <button type="submit">Download Chilly Beans</button>
+  </form>
+  
+  <!-- Making a simple form that is sending information using POST when submitted. -->
+  <form action="/submit-form" method="post">
+    <input type="text" name="info" placeholder="add comment">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
